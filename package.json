@@ -7,7 +7,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/KareKyasu/kinari.git"
+		"url": "https://github.com/KareKyasu/kinari-markdown-preview.git"
 	},
 	"engines": {
 		"vscode": "^1.78.0"

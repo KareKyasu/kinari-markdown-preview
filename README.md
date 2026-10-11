@@ -27,7 +27,7 @@
 
 ## インストール
 
-[Releases](https://github.com/KareKyasu/kinari/releases) から `.vsix` をダウンロードして、
+[Releases](https://github.com/KareKyasu/kinari-markdown-preview/releases) から `.vsix` をダウンロードして、
 
 ```bash
 code --install-extension kinari-1.1.0.vsix
