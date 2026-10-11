@@ -1,0 +1,29 @@
+{
+	"name": "paper-markdown-theme",
+	"displayName": "Paper Markdown Preview Theme",
+	"description": "紙っぽい温かみ系のMarkdownプレビュー用ライトテーマ",
+	"publisher": "KareKyasu",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/KareKyasu/paper-markdown-theme.git"
+	},
+	"engines": {
+		"vscode": "^1.70.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"markdown",
+		"preview",
+		"theme",
+		"paper"
+	],
+	"contributes": {
+		"markdown.previewStyles": [
+			"./paper.css"
+		]
+	}
+}
