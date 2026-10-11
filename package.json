@@ -1,17 +1,19 @@
 {
-	"name": "paper-markdown-theme",
-	"displayName": "Paper Markdown Preview Theme",
-	"description": "紙っぽい温かみ系のMarkdownプレビュー用ライトテーマ",
+	"name": "kinari",
+	"displayName": "Kinari — 生成りの Markdown プレビュー",
+	"description": "生成り色や和紙の色を選べる、温かみのある Markdown プレビューテーマ",
 	"publisher": "KareKyasu",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/KareKyasu/paper-markdown-theme.git"
+		"url": "https://github.com/KareKyasu/kinari.git"
 	},
 	"engines": {
-		"vscode": "^1.70.0"
+		"vscode": "^1.78.0"
 	},
+	"main": "./extension.js",
+	"activationEvents": [],
 	"categories": [
 		"Themes"
 	],
@@ -19,11 +21,58 @@
 		"markdown",
 		"preview",
 		"theme",
-		"paper"
+		"paper",
+		"washi",
+		"japanese",
+		"kinari"
 	],
 	"contributes": {
 		"markdown.previewStyles": [
-			"./paper.css"
-		]
+			"./kinari.css"
+		],
+		"markdown.markdownItPlugins": true,
+		"commands": [
+			{
+				"command": "kinari.selectPaper",
+				"title": "和紙を選ぶ",
+				"category": "Kinari",
+				"icon": "$(symbol-color)"
+			}
+		],
+		"menus": {
+			"editor/title": [
+				{
+					"command": "kinari.selectPaper",
+					"when": "(activeWebviewPanelId == 'markdown.preview' || activeCustomEditorId == 'vscode.markdown.preview.editor')",
+					"group": "navigation@10"
+				}
+			]
+		},
+		"configuration": {
+			"title": "Kinari",
+			"properties": {
+				"kinari.paper": {
+					"type": "string",
+					"enum": [
+						"kinari",
+						"torinoko",
+						"usuzakura",
+						"wakana",
+						"aijiro",
+						"shironeri"
+					],
+					"default": "kinari",
+					"enumDescriptions": [
+						"生成り（既定）",
+						"鳥の子",
+						"薄桜",
+						"若菜",
+						"藍白",
+						"白練"
+					],
+					"markdownDescription": "プレビューの和紙の色。"
+				}
+			}
+		}
 	}
 }
