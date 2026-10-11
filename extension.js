@@ -9,6 +9,7 @@ const PAPERS = [
 	{ id: 'usuzakura', label: '薄桜', description: 'うすざくら — 桜の花びらのような、ごく淡い紅' },
 	{ id: 'wakana', label: '若菜', description: 'わかな — 春の若菜のような、淡い黄緑' },
 	{ id: 'aijiro', label: '藍白', description: 'あいじろ — 藍染めのいちばん淡い、白に近い水色' },
+	{ id: 'kai', label: '海', description: 'かい — 澄んだ浅瀬のような、淡い青緑' },
 	{ id: 'shironeri', label: '白練', description: 'しろねり — 練り絹のような、ほとんど白' },
 ];
 const PAPER_IDS = PAPERS.map((p) => p.id);

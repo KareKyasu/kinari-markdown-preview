@@ -152,6 +152,32 @@ body:has(.kinari-paper-aijiro) {
   --kinari-scrollbar-hover: rgba(79, 111, 120, 0.5);
 }
 
+/* ---- 配色: 海 ---- */
+body:has(.kinari-paper-kai) {
+  --kinari-bg: #e6f2f0;
+  --kinari-fg: #2f3b3c;
+  --kinari-heading: #1f2a2b;
+  --kinari-muted: #536567;
+  --kinari-accent: #1d6672;
+  --kinari-accent-strong: #134c56;
+  --kinari-accent-soft: #9fcbcf;
+  --kinari-rule: #aacacb;
+  --kinari-border: #c1dada;
+  --kinari-code-bg: #d0e4e3;
+  --kinari-code-fg: #1e5f69;
+  --kinari-pre-bg: #d9eae8;
+  --kinari-quote-bar: #4fa0aa;
+  --kinari-quote-bg: #dbebe9;
+  --kinari-th-bg: #cce1e0;
+  --kinari-stripe: #d7e8e7;
+  --kinari-row-hover: #c7dedd;
+  --kinari-mark-bg: #f2dfa0;
+  --kinari-selection: rgba(79, 160, 170, 0.35);
+  --kinari-shadow: rgba(47, 122, 128, 0.18);
+  --kinari-scrollbar: rgba(47, 122, 128, 0.3);
+  --kinari-scrollbar-hover: rgba(47, 122, 128, 0.5);
+}
+
 /* ---- 配色: 白練 ---- */
 body:has(.kinari-paper-shironeri) {
   --kinari-bg: #f8f7f2;
@@ -184,6 +210,7 @@ body:has(.kinari-paper-shironeri) {
 .kinari-paper-usuzakura,
 .kinari-paper-wakana,
 .kinari-paper-aijiro,
+.kinari-paper-kai,
 .kinari-paper-shironeri {
   display: none !important;
 }

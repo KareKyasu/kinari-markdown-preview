@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0
+
+- 和紙の色に「海（kai）」を追加（澄んだ浅瀬のような、淡い青緑）
+
 ## 1.1.0
 
 - 名前を「Paper Markdown Preview Theme」から「Kinari」に変更（拡張ID: `KareKyasu.kinari`）

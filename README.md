@@ -1,6 +1,6 @@
 # Kinari
 
-生成り（きなり）色の紙のような、温かみのある VS Code Markdown プレビューテーマです。和紙の色を6種類から選べます。
+生成り（きなり）色の紙のような、温かみのある VS Code Markdown プレビューテーマです。和紙の色を7種類から選べます。
 
 ![Kinari のスクリーンショット](images/screenshot.png)
 
@@ -12,7 +12,7 @@
 
 ## 和紙の色
 
-![6種類の和紙の色](images/papers.png)
+![7種類の和紙の色](images/papers.png)
 
 | 和紙 | 設定値 | 色合い |
 | --- | --- | --- |
@@ -21,6 +21,7 @@
 | 薄桜（うすざくら） | `usuzakura` | 桜の花びらのような、ごく淡い紅 |
 | 若菜（わかな） | `wakana` | 春の若菜のような、淡い黄緑 |
 | 藍白（あいじろ） | `aijiro` | 藍染めのいちばん淡い、白に近い水色 |
+| 海（かい） | `kai` | 澄んだ浅瀬のような、淡い青緑 |
 | 白練（しろねり） | `shironeri` | 練り絹のような、ほとんど白 |
 
 プレビュー右上の 🎨 ボタン（またはコマンドパレットの「Kinari: 和紙を選ぶ」）で選べます。矢印キーで選んでいる間もプレビューに反映されるので、見比べながら選べます。Enter で決定、Esc で元の色に戻ります。
@@ -30,7 +31,7 @@
 [Releases](https://github.com/KareKyasu/kinari-markdown-preview/releases) から `.vsix` をダウンロードして、
 
 ```bash
-code --install-extension kinari-1.1.0.vsix
+code --install-extension kinari-1.2.0.vsix
 ```
 
 ソースから作る場合:

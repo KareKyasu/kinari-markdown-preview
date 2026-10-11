@@ -3,7 +3,7 @@
 	"displayName": "Kinari — 生成りの Markdown プレビュー",
 	"description": "生成り色や和紙の色を選べる、温かみのある Markdown プレビューテーマ",
 	"publisher": "KareKyasu",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
@@ -59,6 +59,7 @@
 						"usuzakura",
 						"wakana",
 						"aijiro",
+						"kai",
 						"shironeri"
 					],
 					"default": "kinari",
@@ -68,6 +69,7 @@
 						"薄桜",
 						"若菜",
 						"藍白",
+						"海",
 						"白練"
 					],
 					"markdownDescription": "プレビューの和紙の色。"
