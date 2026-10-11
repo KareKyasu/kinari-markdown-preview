@@ -4,13 +4,13 @@
 const vscode = require('vscode');
 
 const PAPERS = [
-	{ id: 'kinari', label: '生成り', description: 'きなり — 漂白していない、ほんのり黄みの白（既定）' },
-	{ id: 'torinoko', label: '鳥の子', description: 'とりのこ — 卵の殻のような、少し濃いめの和紙色' },
-	{ id: 'usuzakura', label: '薄桜', description: 'うすざくら — 桜の花びらのような、ごく淡い紅' },
-	{ id: 'wakana', label: '若菜', description: 'わかな — 春の若菜のような、淡い黄緑' },
-	{ id: 'aijiro', label: '藍白', description: 'あいじろ — 藍染めのいちばん淡い、白に近い水色' },
-	{ id: 'kai', label: '海', description: 'かい — 澄んだ浅瀬のような、淡い青緑' },
-	{ id: 'shironeri', label: '白練', description: 'しろねり — 練り絹のような、ほとんど白' },
+	{ id: 'kinari', label: '生成り', description: 'きなり — 晒さぬ木綿の、ほんのり黄みを帯びた白。いつもの一枚' },
+	{ id: 'torinoko', label: '鳥の子', description: 'とりのこ — 鶏の卵の殻を思わせる、淡い玉子色' },
+	{ id: 'usuzakura', label: '薄桜', description: 'うすざくら — 春霞にほどける、桜の花びらのごく淡い紅' },
+	{ id: 'wakana', label: '若菜', description: 'わかな — 雪間に萌え出る若菜の、やさしい黄緑' },
+	{ id: 'aijiro', label: '藍白', description: 'あいじろ — 藍甕にほんのひと浸し。もっとも白に近い藍' },
+	{ id: 'kai', label: '海', description: 'かい — 凪の浅瀬に陽の差すような、澄んだ青緑' },
+	{ id: 'shironeri', label: '白練', description: 'しろねり — 練り上げた絹のような、ほのかに温もりのある白' },
 ];
 const PAPER_IDS = PAPERS.map((p) => p.id);
 
@@ -42,7 +42,7 @@ function selectPaper() {
 	const saved = currentPaper();
 	const quickPick = vscode.window.createQuickPick();
 	quickPick.title = 'Kinari: 和紙を選ぶ';
-	quickPick.placeholder = '矢印キーで選ぶとプレビューに反映されます（Enter で決定 / Esc で戻す）';
+	quickPick.placeholder = '矢印で巡ると頁の色が移ろいます（Enter で決まり / Esc で元の色へ）';
 	quickPick.items = PAPERS.map((p) => ({ ...p, label: p.id === saved ? `$(check) ${p.label}` : p.label }));
 	quickPick.activeItems = quickPick.items.filter((item) => item.id === saved);
 

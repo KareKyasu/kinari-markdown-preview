@@ -1,4 +1,4 @@
-# Changelog
+# 歩み（Changelog）
 
 ## 1.2.0
 
