@@ -3,7 +3,7 @@
 	"displayName": "Kinari — 生成りの紙で読む Markdown",
 	"description": "Markdown のプレビューを、生成りの紙のように。七つの和紙の色からお選びいただけます。",
 	"publisher": "KareKyasu",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"license": "MIT",
 	"repository": {
 		"type": "git",

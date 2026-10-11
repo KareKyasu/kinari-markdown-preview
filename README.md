@@ -41,7 +41,7 @@ Kinari（きなり）は、VS Code の Markdown プレビューを、生成り�
 [Releases](https://github.com/KareKyasu/kinari-markdown-preview/releases) から `.vsix` をお受け取りのうえ、次のようにお迎えください。
 
 ```bash
-code --install-extension kinari-1.2.0.vsix
+code --install-extension kinari-1.2.1.vsix
 ```
 
 お手元で仕立てる場合は、こちらを。
